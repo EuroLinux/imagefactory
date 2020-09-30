@@ -1,1 +1,4 @@
 /_site/
+imagefactory_plugins/MANIFEST
+imagefactory_plugins/imagefactory-plugins.spec
+imagefactory_plugins/dist/*
