@@ -9,7 +9,7 @@
 Summary: System image generation tool
 Name: imagefactory
 Version: 1.1.15
-Release: 2%{?dist}
+Release: 3%{?dist}
 Source0: http://repos.fedorapeople.org/repos/aeolus/imagefactory/%{version}/tarball/%{name}-%{version}.tar.gz
 License: ASL 2.0
 Group: Applications/System
@@ -133,6 +133,12 @@ fi
 %{_bindir}/imagefactoryd
 
 %changelog
+* Wed Sep 30 2020 Alex Baranowski <ab@euro-linux.com> 1.1.15-3
+- Update .gitignore so it ignores build artifacts (ab@euro-linux.com)
+- Enable openstack plugin build - it seems to be working (ab@euro-linux.com)
+- Fix CherryPy Server (ab@euro-linux.com)
+- Clean README (ab@euro-linux.com)
+
 * Fri Jan 10 2020 Brendan Reilly <breilly@redhat.com> 1.1.15-2
 - Revert "Added default ovf namespace to root element Envelope"
   (breilly@redhat.com)
